@@ -33,15 +33,13 @@ for x in range (1,4):
                 game = game + 1
             
             if game %2 == 0:
-                
-            
                 guess = st.number_input(str(player2) + ", input your guess: ")
             if guess < secretnum:
-                print("Your number is too low.")
+                st.write("Your number is too low.")
                 game = game + 1
                 
             elif guess > secretnum:
-                print("Your number is too high.")
+                st.write("Your number is too high.")
                 game = game + 1
         
             if guess == secretnum and game %2 == 0:
@@ -63,4 +61,4 @@ if p1wins > 1:
     st.write("Congratulations,", player1, "you have won a majority of the games. You are the true winner," , player2 , "you are a loser.")
 if p2wins > 1:
     st.write("Congratulations,",player2, "you have won a majority of the games. You are the true winner,", player1, "you are a loser.")
-print('Thanks for playing!')
+st.write('Thanks for playing!')
