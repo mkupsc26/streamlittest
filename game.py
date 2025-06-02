@@ -22,7 +22,7 @@ for x in range (1,4):
     print("Round:", gameround)
     while guess != secretnum and game < 7: 
             if game %2 != 2:
-             guess = st.slider(str(player1) + ", input your guess: ")
+             guess = st.number_input(str(player1) + ", input your guess: ")
         
             if guess < secretnum:
                 st.write("Your number is too low.")
@@ -35,7 +35,7 @@ for x in range (1,4):
             if game %2 == 0:
                 
             
-                guess = int(input(str(player2) + ", input your guess: "))
+                guess = st.number_input(str(player2) + ", input your guess: ")
             if guess < secretnum:
                 print("Your number is too low.")
                 game = game + 1
