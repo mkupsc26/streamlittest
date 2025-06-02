@@ -22,7 +22,7 @@ for x in range (1,4):
     print("Round:", gameround)
     while guess != secretnum and game < 7: 
             if game %2 != 2:
-             guess = st.slider(str(player1) + ", input your guess: ")
+             guess = st.text_input(str(player1) + ", input your guess: ")
         
             if guess < secretnum:
                 st.write("Your number is too low.")
@@ -45,22 +45,22 @@ for x in range (1,4):
                 game = game + 1
         
             if guess == secretnum and game %2 == 0:
-                print("Congratulations,", player2, "you got the number correct!")
+                st.write("Congratulations,", player2, "you got the number correct!")
                 p2wins = p2wins + 1
                 gameround = gameround + 1
                 
             if guess == secretnum and game %2 != 0:
-                print("Congratulations,", player1, "you got the number correct!")
+                st.write("Congratulations,", player1, "you got the number correct!")
                 p1wins = p1wins + 1
                 gameround = gameround + 1
                 
         
                 
             if game > 6:
-                print("Oops, you have both guessed three times. \n", player1, "and", player2, "you guys are losers. Game Over.")
+                st.write("Oops, you have both guessed three times. \n", player1, "and", player2, "you guys are losers. Game Over.")
                 gameround = gameround + 1
 if p1wins > 1:
-    print("Congratulations,", player1, "you have won a majority of the games. You are the true winner," , player2 , "you are a loser.")
+    st.write("Congratulations,", player1, "you have won a majority of the games. You are the true winner," , player2 , "you are a loser.")
 if p2wins > 1:
-    print("Congratulations,",player2, "you have won a majority of the games. You are the true winner,", player1, "you are a loser.")
+    st.write("Congratulations,",player2, "you have won a majority of the games. You are the true winner,", player1, "you are a loser.")
 print('Thanks for playing!')
