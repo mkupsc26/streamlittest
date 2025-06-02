@@ -1,10 +1,10 @@
 import streamlit as st
 
 
-st.write('Hello world, today you two players will be playing a guessing game to guess a number between 1 and 10. You will each have three tries.')
+st.title('Hello world, today you two players will be playing a guessing game to guess a number between 1 and 10. You will each have three tries.')
 
-player1 = input("Enter name of player 1: ")
-player2 = input("Enter name of player 2: ")
+player1 = st.text_input("Enter name of player 1: ")
+player2 = st.text_input("Enter name of player 2: ")
 p1wins = 0
 p2wins = 0
 gameround = 1
