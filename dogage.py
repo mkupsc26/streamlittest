@@ -3,14 +3,12 @@ def main():
   calculations()
 
 def inputs(): 
-  global dogname
-  global age
   dogname = st.text_input("Enter your dog's name :")
   age = st.number_input("Enter your dog's age: ")
   return dogname
   return age
-def calculations():
+def calculations(age, dogname):
   age = age * 7
-  st.write("Dog age in human years:", age)
+  st.write("The age of", dogname, "in human years is,", age)
 main()
   
