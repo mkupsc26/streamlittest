@@ -5,7 +5,7 @@ def calc(age, dogname):
   age = age * 7
   st.write("The age of", dogname, "in human years is,", age)
 if st.button("Calculate"):
-  calc()
+  calc(age, dogname)
 
 
   
