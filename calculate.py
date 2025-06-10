@@ -23,7 +23,7 @@ def calculateDist(x1, y1, x2, y2):
   
   ans = math.sqrt(add)
 
-  return answer
+  return ans
 
 def calcMid(x1,x2,y1,y2):
   xMid = (x1+x2)/2
@@ -31,7 +31,7 @@ def calcMid(x1,x2,y1,y2):
   midpoint = ("(" + str(xMid) + ", " + str(yMid) + ")")
   return midpoint  
 
-if st.button("Calculate the distance!"):
+if st.button("Calculate the distance: "):
   x1=int(x1)
   x2=int(x2)
   y1=int(y1)
