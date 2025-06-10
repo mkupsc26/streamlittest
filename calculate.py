@@ -10,7 +10,8 @@ def calcMid(x1,x2,y1,y2):
   midpoint = ("(" + str(xMid) + ", " + str(yMid) + ")")
   return midpoint  
   
-if st.button("Calculate midpoint: "):
+if st.button("Calculate midpoint:"):
+  
   x1=int(x1)
   x2=int(x2)
   y1=int(y1)
