@@ -10,7 +10,7 @@ if st.button("Calculate midpoint: "):
   x2=int(x2)
   y1=int(y1)
   y2=int(y2)
-  mid == calcMid(x1,x2,y1,y2)
+  mid = calcMid(x1,x2,y1,y2)
   st.write("Midpoint:", mid)
   
 #if st.button("Calculate distance: "):
